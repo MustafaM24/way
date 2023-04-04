@@ -37,7 +37,7 @@ class _ScrollableChips extends State<CustomChoiceChips> {
                           ? const BorderSide(color: CustomColors.borderGrey)
                           : null,
                       backgroundColor: CustomColors.secondaryblack,
-                      selectedColor: CustomColors.primaryMaroon,
+                      selectedColor: CustomColors.primaryBlue,
                       label: Container(
                           height: 20,
                           width: (widget.fixedWidth)

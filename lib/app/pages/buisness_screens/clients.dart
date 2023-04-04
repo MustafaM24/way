@@ -22,17 +22,17 @@ class ClientsScreen extends StatelessWidget {
             Text(
               'Import Clients from Phone\'s Contacts First',
               style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 14,
                   color: Color(0xFF000000),
-                  fontWeight: FontWeight.w900),
+                  fontWeight: FontWeight.w400),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 20.0),
             Text(
               'Create client cards & invite your existing clients \nto WAY',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16.0,
+                fontWeight: FontWeight.w400,
+                fontSize: 14.0,
               ),
               textAlign: TextAlign.center,
             ),
@@ -40,8 +40,8 @@ class ClientsScreen extends StatelessWidget {
             Text(
               'You can keep track of client information and ...',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16.0,
+                fontWeight: FontWeight.w400,
+                fontSize: 14.0,
               ),
               textAlign: TextAlign.center,
             ),
@@ -55,7 +55,7 @@ class ClientsScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 16.0),
               ),
               style: ElevatedButton.styleFrom(
-                primary: Color(0xFF000000),
+                primary: CustomColors.primaryBlue,
                 padding: EdgeInsets.symmetric(
                   horizontal: 60.0,
                   vertical: 10.0,

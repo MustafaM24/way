@@ -53,7 +53,7 @@ class AccountDetailsScreen extends StatelessWidget {
                 //onsave()
                 Navigator.of(context).pop();
               }),
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
             ),
           ],
@@ -104,7 +104,7 @@ class _SelectableWordsState extends State<SelectableWords> {
                   fontSize: 16.0,
                   fontWeight: FontWeight.w900,
                   color: selectedWordIndex == index
-                      ? CustomColors.primaryMaroon
+                      ? CustomColors.primaryBlue
                       : null,
                 ),
               ),

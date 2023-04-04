@@ -13,6 +13,17 @@ class TypeOfClientScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        // Container(
+        //   width: MediaQuery.of(context).size.width / 2.5, //150,
+        //   height: MediaQuery.of(context).size.height / 4, //220,
+        //   decoration: BoxDecoration(
+        //     borderRadius: BorderRadius.circular(10),
+        //     image: DecorationImage(
+        //       image: AssetImage('assets/logo.png'),
+        //       fit: BoxFit.cover,
+        //     ),
+        //   ),
+        // ),
         Image.asset(
           'assets/logo.png',
           fit: BoxFit.cover,

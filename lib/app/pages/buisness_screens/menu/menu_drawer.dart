@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:way/app/common/buttons/primary_button.dart';
 import 'package:way/app/pages/buisness_screens/buisnessprofile/details/buisnessdetail.dart';
 import 'package:way/app/pages/buisness_screens/feedback/customer_feedback_screen.dart';
-import 'package:way/app/pages/buisness_screens/menu/billing.dart';
 import 'package:way/app/pages/buisness_screens/menu/manageEmployee/manageemployee.dart';
+import 'package:way/app/pages/buisness_screens/menu/messages/inbox.dart';
 import 'package:way/app/pages/buisness_screens/menu/service.dart';
 import 'package:way/style/colors.dart';
 import 'package:way/app/pages/buisness_screens/buisnessprofile/settings/buisnessSettings.dart';
@@ -16,6 +16,7 @@ class MenuDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Drawer(
+        backgroundColor: Color(0xFFD9D9D9),
         child: Column(
           children: [
             Container(
@@ -23,24 +24,12 @@ class MenuDrawer extends StatelessWidget {
                   const BoxDecoration(border: Border(bottom: BorderSide())),
               child: ListTile(
                 minVerticalPadding: 24,
-                title: const Center(child: Text("SETTINGS")),
+                title: const Center(child: Text("MESSAGES")),
                 onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => BuisnessSettings()));
-                },
-              ),
-            ),
-            Container(
-              decoration:
-                  const BoxDecoration(border: Border(bottom: BorderSide())),
-              child: ListTile(
-                minVerticalPadding: 24,
-                title: const Center(child: Text("BILLING AND SUBSCRIPTION")),
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Billing()));
+                          builder: (context) => MessagesScreen()));
                 },
               ),
             ),
@@ -65,20 +54,6 @@ class MenuDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => ManageEmployeeScreen()));
-                },
-              ),
-            ),
-            Container(
-              decoration:
-                  const BoxDecoration(border: Border(bottom: BorderSide())),
-              child: ListTile(
-                minVerticalPadding: 24,
-                title: const Center(child: Text("UPDATE PROFILE")),
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => BuisnessDetail()));
                 },
               ),
             ),

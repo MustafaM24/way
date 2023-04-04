@@ -46,7 +46,7 @@ class BuisnessDetail extends StatelessWidget {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
                     builder: (context) => BuissnessPasswordChange()));
               },
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
             ),
             SizedBox(height: 60.0),
@@ -64,7 +64,7 @@ class BuisnessDetail extends StatelessWidget {
                 //onsave()
                 Navigator.of(context).pop();
               }),
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
             ),
           ],

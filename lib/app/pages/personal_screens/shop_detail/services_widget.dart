@@ -24,6 +24,7 @@ class ServicesWidget extends StatelessWidget {
     return ListView.builder(
       itemCount: services.length,
       itemBuilder: (context, index) => Card(
+        color: CustomColors.shadowGrey,
         elevation: 2,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
@@ -49,7 +50,8 @@ class ServicesWidget extends StatelessWidget {
               PrimaryButton(
                 title: "Book",
                 onTap: () => Navigator.pushNamed(context, bookAppointment),
-                width: 80,
+                width: 90,
+                height: 40,
                 color: CustomColors.secondaryblack,
               )
             ],

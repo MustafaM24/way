@@ -25,7 +25,8 @@ class _PaymentSettingsScreenState extends State<PaymentSettingsScreen> {
           'Payment Settings',
           style: TextStyle(
             color: Colors.black,
-            fontWeight: FontWeight.w900,
+            fontWeight: FontWeight.w600,
+            fontSize: 16,
           ),
         ),
       ),
@@ -173,7 +174,7 @@ class _PaymentSettingsScreenState extends State<PaymentSettingsScreen> {
               onTap: () {
                 // TODO: Implement save functionality
               },
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
             ),
           ],

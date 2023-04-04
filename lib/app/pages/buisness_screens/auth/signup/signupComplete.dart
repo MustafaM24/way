@@ -38,9 +38,10 @@ class SignupCompleteScreen extends StatelessWidget {
             SizedBox(height: 30),
             PrimaryButton(
               title: "Continue",
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
               onTap: () {
+                Navigator.of(context).pop();
                 Navigator.of(context).pop();
                 Navigator.of(context).pop();
                 Navigator.of(context).pop();

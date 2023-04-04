@@ -101,7 +101,7 @@ class _BookAppointmentState extends State<BookAppointment> {
               },
               calendarStyle: CalendarStyle(
                 selectedDecoration: BoxDecoration(
-                  color: CustomColors.primaryMaroon,
+                  color: CustomColors.primaryBlue,
                   shape: BoxShape.circle,
                 ),
                 todayDecoration: BoxDecoration(
@@ -212,7 +212,7 @@ class _BookAppointmentState extends State<BookAppointment> {
 
                   // agent buttons (if you want to add more agents, just copy paste the code below and change the index)
                   Container(
-                    color: CustomColors.shadowGrey,
+                    color: Colors.white,
                     margin: const EdgeInsets.symmetric(horizontal: 10.0),
                     child: SizedBox(
                       height: 110,

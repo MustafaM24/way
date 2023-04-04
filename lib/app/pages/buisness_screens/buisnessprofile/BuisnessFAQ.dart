@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:way/app/pages/buisness_screens/buisnessprofile/BuisnessContactUs.dart';
 import 'package:way/style/colors.dart';
 
 class BuisnessFAQsPage extends StatefulWidget {
@@ -89,6 +90,11 @@ class _BuisnessFAQsPageState extends State<BuisnessFAQsPage> {
             Center(
               child: ElevatedButton(
                 onPressed: () {
+                  //BuisnessContactUsPage
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => BuisnessContactUsPage()));
                   // TODO: Implement contact form
                 },
                 child: Text('Contact Us'),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:way/app/common/buttons/primary_button.dart';
+import 'package:way/app/pages/buisness_screens/auth/signup/addemployee.dart';
 import 'package:way/app/pages/buisness_screens/auth/signup/signupComplete.dart';
 import 'package:way/style/colors.dart';
 
@@ -135,7 +136,7 @@ class _AddServicePageState extends State<AddServicePage> {
               vertPadding: 20,
               title: "Next",
               onTap: onNext,
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
             ),
           ],
@@ -147,7 +148,7 @@ class _AddServicePageState extends State<AddServicePage> {
   // Move to the next screen
   void onNext() {
     Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => SignupCompleteScreen()));
+        .push(MaterialPageRoute(builder: (context) => SignUpAddEmployee()));
     // TODO: Navigate to the next screen
   }
 }

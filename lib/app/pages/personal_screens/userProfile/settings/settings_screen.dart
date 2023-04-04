@@ -95,7 +95,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
                   builder: (context) => ChangePasswordScreen()));
             },
-            color: Color(0xFF000000),
+            color: CustomColors.primaryBlue,
             width: MediaQuery.of(context).size.width / 1.2,
           ),
           const Divider(height: 40),
@@ -133,7 +133,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             vertPadding: 20,
             title: "Save",
             onTap: onSave,
-            color: Color(0xFF000000),
+            color: CustomColors.primaryBlue,
             width: MediaQuery.of(context).size.width / 1.2,
           ),
         ],

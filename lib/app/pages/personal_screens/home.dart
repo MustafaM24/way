@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:way/app/pages/personal_screens/appointments_Page/appointments.dart';
+import 'package:way/app/pages/personal_screens/explore/exploreScreen.dart';
 import 'package:way/app/pages/personal_screens/explore_screen.dart';
 import 'package:way/app/pages/personal_screens/userProfile/userProfile.dart';
 import 'package:way/app/pages/personal_screens/your_way/your_way_screen.dart';
@@ -36,7 +37,7 @@ class _HomeState extends State<Home> {
           elevation: 0,
           backgroundColor: Colors.transparent,
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: CustomColors.primaryMaroon,
+          selectedItemColor: CustomColors.primaryBlue,
           unselectedFontSize: 12,
           selectedFontSize: 12,
           iconSize: 28,

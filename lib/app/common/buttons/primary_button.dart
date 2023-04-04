@@ -14,7 +14,7 @@ class PrimaryButton extends StatelessWidget {
   const PrimaryButton(
       {super.key,
       required this.title,
-      this.color = CustomColors.primaryMaroon,
+      this.color = const Color(0xFF333399),
       required this.onTap,
       this.horizPadding = 0,
       this.vertPadding = 0,

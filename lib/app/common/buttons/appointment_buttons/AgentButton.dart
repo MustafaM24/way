@@ -41,7 +41,7 @@ class _AgentButtonState extends State<AgentButton> {
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor:
-                isSelected ? CustomColors.maroonred : Color(0xFFFFFFFF),
+                isSelected ? Color(0x5F333399) : CustomColors.shadowGrey,
             elevation: 1,
           ),
           onPressed: onSelectionChanged,

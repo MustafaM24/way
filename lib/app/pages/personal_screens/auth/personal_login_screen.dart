@@ -33,9 +33,9 @@ class _PersonalLoginScreenState extends State<PersonalLoginScreen> {
   }
 
   //TODO: write sign in with logic here.
-  signinWithGoogleTapped() {
-    print("Sign in with Google");
-  }
+  // signinWithGoogleTapped() {
+  //   print("Sign in with Google");
+  // }
 
   // //TODO: write forgot password logic here.
   // forgotPasswordTapped() {
@@ -112,14 +112,14 @@ class _PersonalLoginScreenState extends State<PersonalLoginScreen> {
                       onTap: () => Navigator.pushReplacementNamed(
                           context, personalSignupScreenRoute)),
                   const SizedBox(height: 12),
-                  SignInButton(
-                    Buttons.Google,
-                    onPressed: signinWithGoogleTapped,
-                    padding:
-                        const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                  ),
+                  // SignInButton(
+                  //   Buttons.Google,
+                  //   onPressed: signinWithGoogleTapped,
+                  //   padding:
+                  //       const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                  //   shape: const RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.all(Radius.circular(8))),
+                  // ),
                   const SizedBox(height: 20),
                   // switch to buisness button
                   PrimaryButton(

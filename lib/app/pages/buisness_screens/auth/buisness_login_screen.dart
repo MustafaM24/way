@@ -122,14 +122,14 @@ class _BuisnessLoginState extends State<BuisnessLogin> {
                   // onTap: () => Navigator.pushReplacementNamed(
                   //     context, personalSignupScreenRoute)),
                   const SizedBox(height: 12),
-                  SignInButton(
-                    Buttons.Google,
-                    onPressed: signinWithGoogleTapped,
-                    padding:
-                        const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                  ),
+                  // SignInButton(
+                  //   Buttons.Google,
+                  //   onPressed: signinWithGoogleTapped,
+                  //   padding:
+                  //       const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                  //   shape: const RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.all(Radius.circular(8))),
+                  // ),
                   const SizedBox(height: 20),
                   PrimaryButton(
                       title: "Switch to Personal",

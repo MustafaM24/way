@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:way/app/pages/personal_screens/shop_detail/shop_detail_screen.dart';
-import 'package:way/app/pages/personal_screens/userProfile/add_review.dart';
+import 'package:way/app/pages/personal_screens/appointments_Page/add_review.dart';
 import 'package:way/router/router.dart';
 import 'package:way/router/router_arguments.dart';
 import 'package:way/style/colors.dart';

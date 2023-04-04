@@ -52,7 +52,7 @@ class _BuisnessHomeState extends State<BuisnessHome> {
           elevation: 0,
           backgroundColor: Colors.transparent,
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: CustomColors.primaryMaroon,
+          selectedItemColor: CustomColors.primaryBlue,
           unselectedFontSize: 12,
           selectedFontSize: 12,
           iconSize: 28,

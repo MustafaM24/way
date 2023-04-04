@@ -5,12 +5,12 @@ import 'package:way/theme/text_theme.dart';
 class CustomTheme {
   static ThemeData get lightTheme {
     return ThemeData(
-      primaryColor: CustomColors.primaryMaroon,
+      primaryColor: CustomColors.primaryBlue,
       fontFamily: 'Inter',
-      appBarTheme: const AppBarTheme(color: CustomColors.primaryMaroon),
+      appBarTheme: const AppBarTheme(color: CustomColors.primaryBlue),
       textTheme: CustomTextTheme.getTheme(Brightness.light),
       colorScheme: const ColorScheme.light(
-          primary: CustomColors.primaryMaroon,
+          primary: CustomColors.primaryBlue,
           secondary: CustomColors.secondaryYellow),
       dividerColor: CustomColors.dividerGrey,
     );

@@ -195,7 +195,7 @@
 //         child: Container(
 //           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
 //           decoration: BoxDecoration(
-//             color: isSelected ? CustomColors.primaryMaroon : Colors.white,
+//             color: isSelected ? CustomColors.primaryBlue : Colors.white,
 //             borderRadius: BorderRadius.circular(12),
 //           ),
 //           child: Row(
@@ -283,6 +283,8 @@ class _BusinessCategoryScreenState extends State<BusinessCategoryScreen> {
             SizedBox(height: 12),
             buildCategoryButton("Nail Salon"),
             SizedBox(height: 12),
+            buildCategoryButton("Tattoo & Piercing"),
+            SizedBox(height: 12),
             buildCategoryButton("More"),
 
             SizedBox(height: 20),
@@ -292,7 +294,7 @@ class _BusinessCategoryScreenState extends State<BusinessCategoryScreen> {
               vertPadding: 20,
               title: "Next",
               onTap: onNext,
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
             ),
           ],
@@ -308,8 +310,8 @@ class _BusinessCategoryScreenState extends State<BusinessCategoryScreen> {
 
     // Return a Material widget with shadow and elevation for the button
     return Material(
-      elevation: 0,
-      shadowColor: Colors.grey,
+      elevation: 5,
+      shadowColor: Colors.white,
       child: InkWell(
         onTap: () {
           // Update the selected categories list
@@ -324,10 +326,9 @@ class _BusinessCategoryScreenState extends State<BusinessCategoryScreen> {
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
           decoration: BoxDecoration(
-            color: isSelected
-                ? CustomColors.primaryMaroon
-                : CustomColors.shadowGrey,
-            borderRadius: BorderRadius.circular(12),
+            color:
+                isSelected ? CustomColors.primaryBlue : CustomColors.shadowGrey,
+            borderRadius: BorderRadius.circular(0),
           ),
           child: Center(
             child: Text(

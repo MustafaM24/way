@@ -13,6 +13,8 @@ class PersonalSignupScreen extends StatefulWidget {
 
 class _PersonalSignupScreenState extends State<PersonalSignupScreen> {
   GlobalKey<FormState> formkey = GlobalKey();
+  TextEditingController namecontroller = TextEditingController();
+
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController confirmPasswordController = TextEditingController();
@@ -38,6 +40,7 @@ class _PersonalSignupScreenState extends State<PersonalSignupScreen> {
 
   @override
   void dispose() {
+    namecontroller.dispose();
     passwordController.dispose();
     emailController.dispose();
     confirmPasswordController.dispose();
@@ -69,6 +72,11 @@ class _PersonalSignupScreenState extends State<PersonalSignupScreen> {
                       fit: BoxFit.contain,
                     ),
                   ),
+                  InputField(
+                    labelText: "Name",
+                    controller: namecontroller,
+                  ),
+                  const SizedBox(height: 12),
                   InputField(
                       labelText: "Email",
                       controller: emailController,

@@ -75,6 +75,10 @@ class _BuisnessSignUpScreenState extends State<BuisnessSignUpScreen> {
                     ),
                   ),
                   InputField(
+                    labelText: "Name",
+                  ),
+                  const SizedBox(height: 12),
+                  InputField(
                     labelText: "Name of Buisness",
                   ),
                   const SizedBox(height: 12),

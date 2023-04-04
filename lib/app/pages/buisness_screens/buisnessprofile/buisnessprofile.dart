@@ -5,7 +5,7 @@ import 'package:way/app/pages/buisness_screens/buisnessprofile/BuisnessFAQ.dart'
 import 'package:way/app/pages/buisness_screens/buisnessprofile/details/buisnessdetail.dart';
 import 'package:way/app/pages/buisness_screens/buisnessprofile/settings/buisnessSettings.dart';
 import 'package:way/app/pages/buisness_screens/feedback/customer_feedback_screen.dart';
-import 'package:way/app/pages/personal_screens/userProfile/add_review.dart';
+import 'package:way/app/pages/personal_screens/appointments_Page/add_review.dart';
 import 'package:way/router/router.dart';
 import 'package:way/style/colors.dart';
 
@@ -52,22 +52,19 @@ class BuisnessProfile extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 3),
-// )
+                padding: EdgeInsets.symmetric(horizontal: 35),
                 child: GridView.count(
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   crossAxisCount: 2,
-                  mainAxisSpacing: 3,
-                  crossAxisSpacing: 3,
+                  mainAxisSpacing: 25,
+                  crossAxisSpacing: 25,
                   children: [
                     _buildButton(context, 'ACCOUNT DETAILS', BuisnessDetail()),
                     _buildButton(context, 'SETTINGS', BuisnessSettings()),
                     _buildButton(context, 'FAQs', BuisnessFAQsPage()),
                     _buildButton(
                         context, 'CONTACT US', BuisnessContactUsPage()),
-                    _buildButton(
-                        context, 'GIVE US A REVIEW', CustomerFeedbackScreen()),
                   ],
                 ),
               ),
@@ -94,7 +91,7 @@ class BuisnessProfile extends StatelessWidget {
                         fontWeight: FontWeight.w900),
                   ),
                   style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF000000),
+                    primary: CustomColors.primaryBlue,
                     padding: EdgeInsets.symmetric(
                       horizontal: 65,
                       vertical: 15,
@@ -124,15 +121,16 @@ class BuisnessProfile extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           primary: Colors.black,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(5),
+            borderRadius: BorderRadius.circular(3),
           ),
         ),
         child: Text(
           text,
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w900,
-            fontSize: 14,
+            fontSize: 12,
           ),
         ),
       ),
