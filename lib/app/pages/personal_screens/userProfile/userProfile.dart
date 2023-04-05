@@ -4,6 +4,7 @@ import 'package:way/app/pages/personal_screens/userProfile/ContactUs.dart';
 import 'package:way/app/pages/personal_screens/userProfile/FAQ.dart';
 import 'package:way/app/pages/personal_screens/userProfile/accountDetails.dart';
 import 'package:way/app/pages/personal_screens/appointments_Page/add_review.dart';
+import 'package:way/app/pages/personal_screens/userProfile/messages/inbox.dart';
 import 'package:way/app/pages/personal_screens/userProfile/settings/settings_screen.dart';
 import 'package:way/router/router.dart';
 import 'package:way/style/colors.dart';
@@ -64,7 +65,7 @@ class ProfileScreen extends StatelessWidget {
                     _buildButton(context, 'SETTINGS', SettingsScreen()),
                     _buildButton(context, 'FAQs', FAQsPage()),
                     _buildButton(context, 'CONTACT US', ContactUsPage()),
-                    _buildButton(context, 'MESSAGES', AddReviewScreen()),
+                    _buildButton(context, 'MESSAGES', PersonalMessageInbox()),
                   ],
                 ),
               ),

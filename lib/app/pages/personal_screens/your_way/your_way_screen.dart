@@ -123,6 +123,19 @@ class _YourWayScreenState extends State<YourWayScreen> {
                       decoration: InputDecoration(
                         hintText: ('Search'),
                         hintStyle: TextStyle(color: Colors.grey, fontSize: 16),
+                        // prefixIcon:
+                        //   Icon(
+                        //     Icons.search,
+                        //     color: Color.fromARGB(255, 99, 34, 34),
+                        //     size: 5,
+                        //   ),
+
+                        suffixIcon: Padding(
+                          padding: const EdgeInsets.only(
+                              left: 8.0, right: 25.0, top: 3),
+                          child: Icon(Icons.search,
+                              color: Colors.black87.withOpacity(0.8)),
+                        ),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(14.0),
                           borderSide: BorderSide.none,

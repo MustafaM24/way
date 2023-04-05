@@ -6,8 +6,8 @@ import 'package:way/router/router_arguments.dart';
 import 'package:way/style/colors.dart';
 
 class TabsExplore extends StatelessWidget {
-  final List<ShopAdModel> tabBarViewList;
-  const TabsExplore({super.key, required this.tabBarViewList});
+  final List<ShopAdModel> exploretabslist;
+  const TabsExplore({super.key, required this.exploretabslist});
 
   // TODO: This method provides the index of the liked Ad, use it to update the object list of shop ads
   Future<bool?> onLikeButtonTapped(bool? isLiked, int index) async {
@@ -29,7 +29,7 @@ class TabsExplore extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                   image: DecorationImage(
-                    image: AssetImage(tabBarViewList[index].coverImage),
+                    image: AssetImage(exploretabslist[index].coverImage),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -41,7 +41,7 @@ class TabsExplore extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          tabBarViewList[index].title,
+                          exploretabslist[index].title,
                           style: Theme.of(context)
                               .textTheme
                               .headlineSmall
@@ -55,7 +55,7 @@ class TabsExplore extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      tabBarViewList[index].subtitle,
+                      exploretabslist[index].subtitle,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: CustomColors.disableGrey,
                           fontWeight: FontWeight.w600),
@@ -64,6 +64,6 @@ class TabsExplore extends StatelessWidget {
                 ),
               ),
             ),
-        itemCount: tabBarViewList.length);
+        itemCount: exploretabslist.length);
   }
 }
