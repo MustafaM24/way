@@ -84,7 +84,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                 vertPadding: 20,
                 title: 'Save Password',
                 onTap: onSave,
-                color: Color(0xFF000000),
+                color: CustomColors.primaryBlue,
               ),
             ],
           ),
