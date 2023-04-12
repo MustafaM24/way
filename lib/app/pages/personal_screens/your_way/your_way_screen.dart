@@ -18,21 +18,27 @@ class _YourWayScreenState extends State<YourWayScreen> {
   // Fetch all listings here and pass them as parameter to tabBarViews.
   List<ShopAdModel> forYouList = [
     ShopAdModel(
-        coverImage: "assets/car.jpg",
+        coverImage: "assets/way/add1.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
         title: "Freaky's Shop"),
+    ShopAdModel(
+        coverImage: "assets/way/add3.png",
+        rating: "5.0",
+        reviewCount: "248",
+        subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
+        title: "Becky's Hair Salon"),
   ];
   List<ShopAdModel> barberShopList = [
     ShopAdModel(
-        coverImage: "assets/cat.jpg",
+        coverImage: "assets/way/add1.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
         title: "Freaky's Shop"),
     ShopAdModel(
-        coverImage: "assets/tree.jpg",
+        coverImage: "assets/way/add2.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
@@ -40,15 +46,15 @@ class _YourWayScreenState extends State<YourWayScreen> {
   ];
   List<ShopAdModel> hairSalons = [
     ShopAdModel(
-        coverImage: "assets/cat.jpg",
+        coverImage: "assets/way/add3.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
-        title: "Freaky's Shop"),
+        title: "Becky's Hair Salon"),
   ];
   List<ShopAdModel> spas = [
     ShopAdModel(
-        coverImage: "assets/tree.jpg",
+        coverImage: "assets/cat.jpg",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
@@ -56,7 +62,7 @@ class _YourWayScreenState extends State<YourWayScreen> {
   ];
   List<ShopAdModel> others = [
     ShopAdModel(
-        coverImage: "assets/car.jpg",
+        coverImage: "assets/tree.jpg",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",

@@ -49,7 +49,7 @@ class _AgentButtonState extends State<AgentButton> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                backgroundImage: AssetImage('assets/car.jpg'),
+                backgroundImage: AssetImage('assets/way/add1.png'),
                 radius: 20.0,
               ),
               SizedBox(height: 5),
@@ -60,6 +60,7 @@ class _AgentButtonState extends State<AgentButton> {
                   color: isSelected ? Color(0xFF000000) : Color(0xFF000000),
                   fontWeight: FontWeight.w900,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 2),
               Text(

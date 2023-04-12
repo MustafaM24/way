@@ -25,12 +25,12 @@ class PortfolioWidget extends StatelessWidget {
       body: GridView.count(
         crossAxisCount: 2, // 2 picture boxes per row
         children: [
-          _buildImageBox('assets/car.jpg'),
-          _buildImageBox('assets/car.jpg'),
-          _buildImageBox('assets/cat.jpg'),
-          _buildImageBox('assets/cat.jpg'),
-          _buildImageBox('assets/car.jpg'),
-          _buildImageBox('assets/cat.jpg'),
+          _buildImageBox('assets/way/box1.png'),
+          _buildImageBox('assets/way/box2.png'),
+          _buildImageBox('assets/way/box3.png'),
+          _buildImageBox('assets/way/box3.png'),
+          _buildImageBox('assets/way/box5.png'),
+          _buildImageBox('assets/way/box5.png'),
         ],
       ),
     );

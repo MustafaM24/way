@@ -5,6 +5,7 @@ import 'package:way/app/pages/buisness_screens/feedback/customer_feedback_screen
 import 'package:way/app/pages/buisness_screens/menu/manageEmployee/manageemployee.dart';
 import 'package:way/app/pages/buisness_screens/menu/messages/inbox.dart';
 import 'package:way/app/pages/buisness_screens/menu/service.dart';
+import 'package:way/app/pages/buisness_screens/menu/wallet/deposits.dart';
 import 'package:way/style/colors.dart';
 import 'package:way/app/pages/buisness_screens/buisnessprofile/settings/buisnessSettings.dart';
 // import 'package:way/app/pages/buisness_screens/buisnessprofile/settings/billing.dart';
@@ -71,13 +72,39 @@ class MenuDrawer extends StatelessWidget {
                 },
               ),
             ),
+            Container(
+              decoration:
+                  const BoxDecoration(border: Border(bottom: BorderSide())),
+              child: ListTile(
+                minVerticalPadding: 24,
+                title: const Center(child: Text("WALLET")),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Deposits()));
+                },
+              ),
+            ),
+            Container(
+              decoration:
+                  const BoxDecoration(border: Border(bottom: BorderSide())),
+              child: ListTile(
+                minVerticalPadding: 24,
+                title: const Center(child: Text("PREVIOUS APPOINTMENTS")),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => CustomerFeedbackScreen()));
+                },
+              ),
+            ),
             const Spacer(),
             PrimaryButton(
                 vertPadding: 20,
                 height: 44,
                 width: 100,
                 title: "Close",
-                color: CustomColors.secondaryblack,
+                color: CustomColors.primaryBlue,
                 onTap: () => Navigator.of(context).pop())
           ],
         ),

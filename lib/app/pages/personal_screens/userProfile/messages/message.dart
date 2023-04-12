@@ -32,7 +32,7 @@ class PersonalMessageScreen extends StatelessWidget {
         // ),
         elevation: 0,
         backgroundColor: CustomColors.transparent,
-        iconTheme: const IconThemeData(color: CustomColors.secondaryblack),
+        iconTheme: const IconThemeData(color: Colors.black),
         centerTitle: true,
         title: Text(
           message.sender,
@@ -110,6 +110,21 @@ class PersonalMessageScreen extends StatelessWidget {
             ),
             child: Row(
               children: [
+                IconButton(
+                  icon: Icon(Icons.add_location_alt_outlined),
+                  color: CustomColors.primaryBlue,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.image),
+                  color: CustomColors.primaryBlue,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.mic),
+                  color: CustomColors.primaryBlue,
+                  onPressed: () {},
+                ),
                 Expanded(
                   child: TextFormField(
                     decoration: InputDecoration(
@@ -120,6 +135,7 @@ class PersonalMessageScreen extends StatelessWidget {
                 ),
                 IconButton(
                   icon: Icon(Icons.send),
+                  color: CustomColors.primaryBlue,
                   onPressed: () {},
                 ),
               ],

@@ -31,7 +31,7 @@ class BillingPage extends StatelessWidget {
                   width: 2.0,
                 ),
               ),
-              color: CustomColors.shadowGrey.withOpacity(0.5),
+              color: Color(0xFFA2ACCD),
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -52,9 +52,9 @@ class BillingPage extends StatelessWidget {
                         // Handle "Change Plan" button tap
                       },
                       child: Text('Change Plan',
-                          style: TextStyle(color: Colors.black)),
+                          style: TextStyle(color: Colors.white)),
                       style: ElevatedButton.styleFrom(
-                        primary: CustomColors.textGrey,
+                        primary: CustomColors.primaryBlue,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         ),
@@ -74,7 +74,7 @@ class BillingPage extends StatelessWidget {
                   width: 2.0,
                 ),
               ),
-              color: CustomColors.shadowGrey.withOpacity(0.5),
+              color: Color(0xFFA2ACCD),
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -134,11 +134,11 @@ class BillingPage extends StatelessWidget {
                                   },
                                   child: Text('Update Payment Method',
                                       style: TextStyle(
-                                          color: Colors.black,
+                                          color: Colors.white,
                                           fontSize: 12,
-                                          fontWeight: FontWeight.w300)),
+                                          fontWeight: FontWeight.w400)),
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color(0xFFD9D9D9),
+                                    primary: CustomColors.primaryBlue,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(5.0),
                                     ),

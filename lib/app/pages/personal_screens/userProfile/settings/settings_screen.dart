@@ -71,7 +71,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Checkbox(
                           side: const BorderSide(
                               color: CustomColors.blackGreyBg, width: 2),
-                          activeColor: CustomColors.secondaryblack,
+                          activeColor: CustomColors.primaryBlue,
                           value: notificationSettings[index].isSelected,
                           onChanged: (value) {
                             notificationSettings[index].isSelected = value;
@@ -111,7 +111,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Checkbox(
                           side: const BorderSide(
                               color: CustomColors.blackGreyBg, width: 2),
-                          activeColor: CustomColors.secondaryblack,
+                          activeColor: CustomColors.primaryBlue,
                           value: countries[index].isSelected,
                           onChanged: (value) {
                             countries[index].isSelected = value;

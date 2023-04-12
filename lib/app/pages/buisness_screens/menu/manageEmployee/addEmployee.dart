@@ -163,7 +163,7 @@ class _AddEmployeeScreenState extends State<AddEmployeeScreen> {
               onTap: () {
                 // TODO: Implement save functionality
               },
-              color: Color(0xFF000000),
+              color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
             ),
           ],

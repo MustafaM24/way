@@ -120,7 +120,7 @@ class ProfileScreen extends StatelessWidget {
           );
         },
         style: ElevatedButton.styleFrom(
-          primary: Colors.black,
+          primary: CustomColors.primaryBlue,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(3),
           ),

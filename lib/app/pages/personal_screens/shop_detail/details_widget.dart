@@ -119,6 +119,7 @@ class DetailsWidget extends StatelessWidget {
                 child: Text('Share'),
               ),
             ),
+            SizedBox(height: 170),
           ],
         ),
       ),

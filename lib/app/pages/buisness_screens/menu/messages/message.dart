@@ -109,6 +109,21 @@ class MessageScreen extends StatelessWidget {
             ),
             child: Row(
               children: [
+                IconButton(
+                  icon: Icon(Icons.add_location_alt_outlined),
+                  color: CustomColors.primaryBlue,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.image),
+                  color: CustomColors.primaryBlue,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.mic),
+                  color: CustomColors.primaryBlue,
+                  onPressed: () {},
+                ),
                 Expanded(
                   child: TextFormField(
                     decoration: InputDecoration(
@@ -119,6 +134,7 @@ class MessageScreen extends StatelessWidget {
                 ),
                 IconButton(
                   icon: Icon(Icons.send),
+                  color: CustomColors.primaryBlue,
                   onPressed: () {},
                 ),
               ],

@@ -180,21 +180,27 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // Fetch all listings here and pass them as parameter to tabBarViews.
   List<ShopAdModel> forYouList = [
     ShopAdModel(
-        coverImage: "assets/car.jpg",
+        coverImage: "assets/way/add1.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
         title: "Freaky's Shop"),
+    ShopAdModel(
+        coverImage: "assets/way/add3.png",
+        rating: "5.0",
+        reviewCount: "248",
+        subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
+        title: "Becky's Hair Salon"),
   ];
   List<ShopAdModel> barberShopList = [
     ShopAdModel(
-        coverImage: "assets/cat.jpg",
+        coverImage: "assets/way/add1.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
         title: "Freaky's Shop"),
     ShopAdModel(
-        coverImage: "assets/tree.jpg",
+        coverImage: "assets/way/add2.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
@@ -202,15 +208,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
   ];
   List<ShopAdModel> hairSalons = [
     ShopAdModel(
-        coverImage: "assets/cat.jpg",
+        coverImage: "assets/way/add3.png",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
-        title: "Freaky's Shop"),
+        title: "Becky's Hair Salon"),
   ];
   List<ShopAdModel> spas = [
     ShopAdModel(
-        coverImage: "assets/tree.jpg",
+        coverImage: "assets/cat.jpg",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
@@ -218,7 +224,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   ];
   List<ShopAdModel> others = [
     ShopAdModel(
-        coverImage: "assets/car.jpg",
+        coverImage: "assets/tree.jpg",
         rating: "5.0",
         reviewCount: "248",
         subtitle: "Kashim Way, Wuse zors 1, Abuja Nigeria",
@@ -263,31 +269,10 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   fontWeight: FontWeight.w900),
             ),
             elevation: 0,
-            // actions: [
-            //   IconButton(
-            //       onPressed: () {
-            //         setState(() {
-            //           showSearchBar = true;
-            //         });
-            //       },
-            //       icon: const Icon(
-            //         Icons.search_rounded,
-            //         color: CustomColors.secondaryblack,
-            //       ))
-            // ],
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           ),
           body: Column(
             children: [
-              // if (showSearchBar)
-              // Padding(
-              //   padding:
-              //       const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-              //   child: InputField(
-              //     labelText: "Search",
-              //     controller: textController,
-              //   ),
-              // ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(

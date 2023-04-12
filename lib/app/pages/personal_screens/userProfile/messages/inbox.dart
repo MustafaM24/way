@@ -17,28 +17,28 @@ class _PersonalMessageInboxState extends State<PersonalMessageInbox> {
       time: '2:30 PM',
       message: 'Hey there!',
       isRead: true,
-      avatar: 'assets/car.jpg',
+      avatar: 'assets/way/add1.png',
     ),
     Message(
       sender: 'Tattoo Shop',
       time: '1:45 PM',
       message: 'Can you send me the report?',
       isRead: true,
-      avatar: 'assets/car.jpg',
+      avatar: 'assets/way/box1.png',
     ),
     Message(
       sender: 'Hair Salon',
       time: '11:20 AM',
       message: 'How was your weekend?',
       isRead: false,
-      avatar: 'assets/car.jpg',
+      avatar: 'assets/way/add3.png',
     ),
     Message(
       sender: 'Spa',
       time: '10:00 AM',
       message: 'Good morning!',
       isRead: true,
-      avatar: 'assets/car.jpg',
+      avatar: 'assets/way/box2.png',
     ),
   ];
 
@@ -143,6 +143,8 @@ class _PersonalMessageInboxState extends State<PersonalMessageInbox> {
                         children: [
                           CircleAvatar(
                             radius: 28,
+                            backgroundImage:
+                                AssetImage(_messages[index].avatar),
                             // backgroundImage:
                             // Image.asset(_messages[index].avatar).image,
                           ),

@@ -37,14 +37,14 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> {
         // finished appointmetns data for defined vaiables
         serviceName: "Haircut",
         shopName: "Freaky's Shop",
-        shopImage: "assets/car.jpg",
+        shopImage: "assets/way/add1.png",
         appointmentMonth: "December",
         appointmentTime: "2:30 PM",
         appointmentDate: "25"),
     Appointment(
         serviceName: "Massage",
         shopName: "Relax Spa",
-        shopImage: "assets/cat.jpg",
+        shopImage: "assets/way/add3.png",
         appointmentMonth: "December",
         appointmentTime: "9:00 PM",
         appointmentDate: "11"),
@@ -55,14 +55,14 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> {
         // upcoming appointmetns data for defined vaiables
         serviceName: "Manicure",
         shopName: "Nails by Mia",
-        shopImage: "assets/car.jpg",
+        shopImage: "assets/way/add1.png",
         appointmentMonth: "January",
         appointmentTime: "5:30 PM",
         appointmentDate: "19"),
     Appointment(
         serviceName: "Facial",
         shopName: "Glow Beauty",
-        shopImage: "assets/cat.jpg",
+        shopImage: "assets/way/add2.png",
         appointmentMonth: "March",
         appointmentTime: "3:30 PM",
         appointmentDate: "2"),
@@ -222,7 +222,8 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> {
                                                         FontWeight.w600),
                                               ),
                                               style: ElevatedButton.styleFrom(
-                                                primary: Color(0xFF000000),
+                                                primary:
+                                                    CustomColors.primaryBlue,
                                                 padding: EdgeInsets.symmetric(
                                                   horizontal: 30,
                                                   vertical: 4,

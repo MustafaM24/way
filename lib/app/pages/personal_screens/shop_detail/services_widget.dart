@@ -52,7 +52,7 @@ class ServicesWidget extends StatelessWidget {
                 onTap: () => Navigator.pushNamed(context, bookAppointment),
                 width: 90,
                 height: 40,
-                color: CustomColors.secondaryblack,
+                color: CustomColors.primaryBlue,
               )
             ],
           ),

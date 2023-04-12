@@ -335,7 +335,7 @@ class _BookAppointmentState extends State<BookAppointment> {
                             ),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                primary: Color(0xFF000000),
+                                primary: CustomColors.primaryBlue,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(5),
                                 ),

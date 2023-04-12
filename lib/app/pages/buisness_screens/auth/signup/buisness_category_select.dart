@@ -277,7 +277,7 @@ class _BusinessCategoryScreenState extends State<BusinessCategoryScreen> {
             SizedBox(height: 12),
             buildCategoryButton("Hair Salon"),
             SizedBox(height: 12),
-            buildCategoryButton("Beauty Salon"),
+            buildCategoryButton("Home Cleaning"),
             SizedBox(height: 12),
             buildCategoryButton("Spa"),
             SizedBox(height: 12),
@@ -285,7 +285,13 @@ class _BusinessCategoryScreenState extends State<BusinessCategoryScreen> {
             SizedBox(height: 12),
             buildCategoryButton("Tattoo & Piercing"),
             SizedBox(height: 12),
-            buildCategoryButton("More"),
+            buildCategoryButton("Plumbing"),
+            SizedBox(height: 12),
+            buildCategoryButton("Electrical Services"),
+            SizedBox(height: 12),
+            buildCategoryButton("Applicance Repair"),
+            SizedBox(height: 12),
+            buildCategoryButton("HVAC (Heating, Ventilation & Air Con)"),
 
             SizedBox(height: 20),
 

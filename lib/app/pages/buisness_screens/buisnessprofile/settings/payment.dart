@@ -45,7 +45,7 @@ class _PaymentSettingsScreenState extends State<PaymentSettingsScreen> {
                     });
                   },
                   checkColor: Color(0xFFFFFFFF),
-                  activeColor: Colors.black,
+                  activeColor: CustomColors.primaryBlue,
                 ),
                 Text(
                   'Request Deposit',

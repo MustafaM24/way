@@ -184,7 +184,7 @@ class ShopDetailScreen extends StatefulWidget {
 class _ShopDetailScreenState extends State<ShopDetailScreen>
     with TickerProviderStateMixin {
   // TODO: This is demo list of images, you would need a list of images from Backend
-  final List<String> images = ["car.jpg", "cat.jpg", "tree.jpg"];
+  final List<String> images = ["way/add1.png", "way/add2.png", "car.jpg"];
 
   // TODO: you would need to fetch rating and revieCount values from Backend
   final double rating = 5.0;

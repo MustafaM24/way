@@ -23,17 +23,17 @@ class ReviewsWidget extends StatelessWidget {
           _buildReviewCard(
             'John Doe',
             'perfect salon for haircuts, the barbers are experts',
-            'https://via.placeholder.com/150',
+            'assets/way/box1.png',
           ),
           _buildReviewCard(
             'Jane Smith',
             'I always come here for my hair styling needs, never disappoints!',
-            'https://via.placeholder.com/150',
+            'assets/way/box2.png',
           ),
           _buildReviewCard(
             'Bob Johnson',
             'Friendly staff and great service!',
-            'https://via.placeholder.com/150',
+            'assets/way/box3.png',
           ),
         ],
       ),
@@ -47,7 +47,7 @@ class ReviewsWidget extends StatelessWidget {
       child: ListTile(
         leading: CircleAvatar(
           radius: 30,
-          backgroundImage: NetworkImage(imageUrl),
+          backgroundImage: AssetImage(imageUrl),
         ),
         title: Text(
           name,

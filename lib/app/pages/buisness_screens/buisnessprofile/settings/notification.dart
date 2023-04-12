@@ -69,7 +69,7 @@ class _NotificationsState extends State<Notifications> {
                       Checkbox(
                           side: const BorderSide(
                               color: CustomColors.blackGreyBg, width: 2),
-                          activeColor: CustomColors.secondaryblack,
+                          activeColor: CustomColors.primaryBlue,
                           value: notificationSettings[index].isSelected,
                           onChanged: (value) {
                             notificationSettings[index].isSelected = value;
