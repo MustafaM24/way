@@ -75,6 +75,7 @@ flutter:
   assets:
     - assets/
     - assets/countries_flags/
+    - assets/way/
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
