@@ -5,12 +5,12 @@ import 'package:way/app/pages/buisness_screens/auth/signup/addemployee.dart';
 import 'package:way/app/pages/buisness_screens/auth/signup/signupComplete.dart';
 import 'package:way/style/colors.dart';
 
-class AddServicePage extends StatefulWidget {
+class AddServicePageEdit extends StatefulWidget {
   @override
-  _AddServicePageState createState() => _AddServicePageState();
+  _AddServicePageEditState createState() => _AddServicePageEditState();
 }
 
-class _AddServicePageState extends State<AddServicePage> {
+class _AddServicePageEditState extends State<AddServicePageEdit> {
   String _serviceName = "";
   int _hours = 0;
   int _minutes = 0;
@@ -20,7 +20,7 @@ class _AddServicePageState extends State<AddServicePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Add Service",
+        title: Text("Edit Service",
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w600,
@@ -37,14 +37,14 @@ class _AddServicePageState extends State<AddServicePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             // Add the heading and description
-            Text(
-              "Add at least one service. Add more later and edit details.",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w900,
-              ),
-            ),
+            // Text(
+            //   "Add at least one service. Add more later and edit details.",
+            //   textAlign: TextAlign.center,
+            //   style: TextStyle(
+            //     fontSize: 16,
+            //     fontWeight: FontWeight.w900,
+            //   ),
+            // ),
             SizedBox(height: 20),
 
             // Add input field for service name
@@ -139,7 +139,7 @@ class _AddServicePageState extends State<AddServicePage> {
             // Add the button to move to the next screen
             PrimaryButton(
               vertPadding: 20,
-              title: "Next",
+              title: "Save",
               onTap: onNext,
               color: CustomColors.primaryBlue,
               width: MediaQuery.of(context).size.width / 1.2,
@@ -152,8 +152,7 @@ class _AddServicePageState extends State<AddServicePage> {
 
   // Move to the next screen
   void onNext() {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => SignUpAddEmployee()));
+    Navigator.of(context).pop();
     // TODO: Navigate to the next screen
   }
 }

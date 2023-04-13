@@ -4,7 +4,8 @@ import 'package:way/app/pages/buisness_screens/buisnessprofile/details/buisnessd
 import 'package:way/app/pages/buisness_screens/feedback/customer_feedback_screen.dart';
 import 'package:way/app/pages/buisness_screens/menu/manageEmployee/manageemployee.dart';
 import 'package:way/app/pages/buisness_screens/menu/messages/inbox.dart';
-import 'package:way/app/pages/buisness_screens/menu/service.dart';
+import 'package:way/app/pages/buisness_screens/menu/previousappointments.dart';
+import 'package:way/app/pages/buisness_screens/menu/servicemanagement/service.dart';
 import 'package:way/app/pages/buisness_screens/menu/wallet/deposits.dart';
 import 'package:way/style/colors.dart';
 import 'package:way/app/pages/buisness_screens/buisnessprofile/settings/buisnessSettings.dart';
@@ -94,7 +95,7 @@ class MenuDrawer extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => CustomerFeedbackScreen()));
+                          builder: (context) => PreviousAppointments()));
                 },
               ),
             ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:way/app/common/buttons/primary_button.dart';
 import 'package:way/app/model/setting_screen_models.dart';
-import 'package:way/app/pages/personal_screens/userProfile/settings/changePassword.dart';
+import 'package:way/app/pages/personal_screens/userProfile/details/changePassword.dart';
 import 'package:way/style/colors.dart';
 
 class Notifications extends StatefulWidget {

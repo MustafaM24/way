@@ -6,7 +6,7 @@ class WalletCard extends StatelessWidget {
   final int age;
   final String imageUrl;
   final bool isPositive;
-  final String action;
+  final bool isDeposit;
 
   const WalletCard({
     Key? key,
@@ -14,7 +14,7 @@ class WalletCard extends StatelessWidget {
     required this.age,
     required this.imageUrl,
     required this.isPositive,
-    required this.action,
+    required this.isDeposit,
   }) : super(key: key);
 
   @override
@@ -89,7 +89,7 @@ class WalletCard extends StatelessWidget {
                         ),
                         SizedBox(width: 5),
                         Text(
-                          action,
+                          isDeposit ? "Deposit" : "Withdrawal",
                           style: TextStyle(
                             fontSize: 12,
                             color: Color(0xFF373C43),

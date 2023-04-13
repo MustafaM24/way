@@ -36,6 +36,15 @@ class CustomerFeedbackScreen extends StatelessWidget {
           ),
           onPressed: () => Navigator.of(context).pop(),
         ),
+        title: const Text(
+          'Feedback',
+          style: TextStyle(
+            color: Color(0xFF000000),
+            fontWeight: FontWeight.w600,
+            fontSize: 16,
+          ),
+        ),
+        centerTitle: true,
       ),
       body: ListView.builder(
         itemCount: feedbacks.length,

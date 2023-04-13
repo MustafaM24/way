@@ -75,12 +75,13 @@ class _AppointmentsScreenState extends State<AppointmentsScreen> {
       appBar: AppBar(
         elevation: 0, // to remove shadow
         backgroundColor: CustomColors.transparent,
-        title: Text("Appointments",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w900,
-              color: Color(0xF8000000),
-            )),
+        title: Text(
+          "Appointments",
+          style: TextStyle(
+              fontSize: 16,
+              color: CustomColors.secondaryblack,
+              fontWeight: FontWeight.w900),
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(

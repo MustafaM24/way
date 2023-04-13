@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:way/app/pages/personal_screens/auth/personal_login_screen.dart';
 import 'package:way/app/pages/personal_screens/userProfile/ContactUs.dart';
 import 'package:way/app/pages/personal_screens/userProfile/FAQ.dart';
-import 'package:way/app/pages/personal_screens/userProfile/accountDetails.dart';
+import 'package:way/app/pages/personal_screens/userProfile/details/accountDetails.dart';
 import 'package:way/app/pages/personal_screens/appointments_Page/add_review.dart';
 import 'package:way/app/pages/personal_screens/userProfile/messages/inbox.dart';
 import 'package:way/app/pages/personal_screens/userProfile/settings/settings_screen.dart';
@@ -63,9 +63,9 @@ class ProfileScreen extends StatelessWidget {
                     _buildButton(
                         context, 'ACCOUNT DETAILS', AccountDetailsScreen()),
                     _buildButton(context, 'SETTINGS', SettingsScreen()),
-                    _buildButton(context, 'FAQs', FAQsPage()),
-                    _buildButton(context, 'CONTACT US', ContactUsPage()),
                     _buildButton(context, 'MESSAGES', PersonalMessageInbox()),
+                    _buildButton(context, 'CONTACT US', ContactUsPage()),
+                    _buildButton(context, 'FAQs', FAQsPage()),
                   ],
                 ),
               ),

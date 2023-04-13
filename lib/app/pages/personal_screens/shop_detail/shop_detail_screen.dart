@@ -226,24 +226,21 @@ class _ShopDetailScreenState extends State<ShopDetailScreen>
           child: Column(
             children: [
               if (!expandScreen)
-                Padding(
-                    padding: const EdgeInsets.only(left: 8, top: 20),
-                    child: CarouselSlider.builder(
+                Stack(
+                  children: [
+                    CarouselSlider.builder(
                       itemCount: images.length,
                       itemBuilder: (context, index, realIndex) => Container(
-                          width: double.infinity,
-                          margin: const EdgeInsets.symmetric(horizontal: 4),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
-                            image: DecorationImage(
-                              image: AssetImage("assets/${images[index]}"),
-                              fit: BoxFit.cover,
-                            ),
+                        width: double.infinity,
+                        margin: const EdgeInsets.symmetric(horizontal: 4),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          image: DecorationImage(
+                            image: AssetImage("assets/${images[index]}"),
+                            fit: BoxFit.cover,
                           ),
-                          child: Align(
-                              alignment: Alignment.topRight,
-                              child: ReviewBox(
-                                  rating: rating, reviewCount: reviewCount))),
+                        ),
+                      ),
                       options: CarouselOptions(
                         padEnds: false,
                         viewportFraction: 0.9,
@@ -251,7 +248,15 @@ class _ShopDetailScreenState extends State<ShopDetailScreen>
                         enableInfiniteScroll: false,
                         height: MediaQuery.of(context).size.height / 2.8,
                       ),
-                    )),
+                    ),
+                    Positioned(
+                      top: 0,
+                      right: 50,
+                      child:
+                          ReviewBox(rating: rating, reviewCount: reviewCount),
+                    ),
+                  ],
+                ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 12, 20, 0),
                 child: Column(
