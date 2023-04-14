@@ -121,7 +121,7 @@ class EmployeeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.black,
+        color: CustomColors.primaryBlue,
         borderRadius: BorderRadius.circular(7),
       ),
       child: Column(
