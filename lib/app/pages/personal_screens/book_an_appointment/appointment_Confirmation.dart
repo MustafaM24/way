@@ -93,7 +93,7 @@ class _AppointmentBookedScreenState extends State<AppointmentBookedScreen>
             const SizedBox(height: 70),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Color(0xFF000000),
+                primary: CustomColors.primaryBlue,
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
               ),
               onPressed: () {
