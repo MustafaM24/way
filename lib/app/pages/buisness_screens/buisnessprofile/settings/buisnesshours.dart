@@ -138,6 +138,37 @@ class _BuisnesshoursState extends State<Buisnesshours> {
                     imageUrl: 'assets/cat.jpg',
                   ),
                   // Add more employee cards here as needed
+                  SizedBox(height: 100),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(40, 0, 40, 0),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        // Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        //     builder: (context) => const BuisnessLogin()));
+                        // onTap:
+                        // () => Navigator.pushReplacementNamed(
+                        //     context, personalLoginScreenRoute);
+                        // navigate to screen
+                        // onTap:
+                        // () => Navigator.pushReplacementNamed(
+                        //     context, personalLoginScreenRoute);
+                      },
+                      child: Text(
+                        "Save",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w900),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                        primary: CustomColors.primaryBlue,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 65,
+                          vertical: 15,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

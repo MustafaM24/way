@@ -84,7 +84,7 @@ class _YourWayScreenState extends State<YourWayScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 5,
+        length: 8,
         child: Scaffold(
           appBar: AppBar(
             title: const Text(
@@ -177,7 +177,16 @@ class _YourWayScreenState extends State<YourWayScreen> {
                       text: "Spas",
                     ),
                     Tab(
-                      text: "Home Services",
+                      text: "Car Services",
+                    ),
+                    Tab(
+                      text: "Electric Services",
+                    ),
+                    Tab(
+                      text: "Home Cleaning",
+                    ),
+                    Tab(
+                      text: "Plumbing",
                     ),
                     Tab(
                       text: "Other option",
@@ -187,10 +196,15 @@ class _YourWayScreenState extends State<YourWayScreen> {
                 child: TabBarView(
                   children: [
                     //TODO: use loaders here for each widget below using ternary operator
+                    TabsYourWayScreen(tabBarViewList: barberShopList),
+                    TabsYourWayScreen(tabBarViewList: hairSalons),
+                    TabsYourWayScreen(tabBarViewList: spas),
+
                     TabsYourWayScreen(tabBarViewList: forYouList),
                     TabsYourWayScreen(tabBarViewList: barberShopList),
                     TabsYourWayScreen(tabBarViewList: hairSalons),
                     TabsYourWayScreen(tabBarViewList: spas),
+
                     TabsYourWayScreen(tabBarViewList: others),
                   ],
                 ),
